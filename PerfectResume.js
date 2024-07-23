@@ -7,6 +7,12 @@ elementsToRemove.forEach(function(element) {
     element.parentNode.removeChild(element);
 });
 
+// Paso 1.2: Eliminar todos los elementos con la clase "rename-section text-rename"
+var renameElements = resumeContentElement.querySelectorAll('.rename-section.text-rename');
+renameElements.forEach(function(element) {
+    element.parentNode.removeChild(element);
+});
+
 // Convertir el contenido actualizado a HTML
 var resumeContent = resumeContentElement.innerHTML;
 
